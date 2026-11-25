@@ -11,10 +11,39 @@ function createInMemoryDb() {
       { _id: '3', name: 'Carla White', job: 'QA Engineer' },
     ]],
     ['user', [
-      { _id: '4', name: 'Demo User', role: 'admin' },
+      {
+        _id: '1', username: 'alice', name: 'Alice Johnson', role: 'admin',
+      },
+      {
+        _id: '2', username: 'bob', name: 'Bob Brown', role: 'user',
+      },
+      {
+        _id: '3', username: 'carla', name: 'Carla White', role: 'user',
+      },
+      {
+        _id: '4', username: 'david', name: 'David Green', role: 'moderator',
+      },
+      {
+        _id: '5', username: 'emma', name: 'Emma Davis', role: 'user',
+      },
+      {
+        _id: '6', username: 'frank', name: 'Frank Miller', role: 'user',
+      },
+      {
+        _id: '7', username: 'grace', name: 'Grace Lee', role: 'moderator',
+      },
+      {
+        _id: '8', username: 'henry', name: 'Henry Wilson', role: 'user',
+      },
+      {
+        _id: '9', username: 'iris', name: 'Iris Taylor', role: 'admin',
+      },
+      {
+        _id: '10', username: 'jack', name: 'Jack Anderson', role: 'user',
+      },
     ]],
   ]);
-  let idCounter = 5;
+  let idCounter = 11;
 
   const ensureCollection = (name) => {
     if (!collections.has(name)) {

@@ -11,6 +11,12 @@ API Endpoints
 | POST        | api/employees    |Create a new employee         |
 | PUT        | api/employees/id    |Update an existing employee|
 | DELETE        | api/employees/id    |Delete an existing employee|
+| GET         | api/users        |Get all users (add `?minId=&maxId=` query params to get users with IDs within a given range)|
+| GET         | api/users/jobs   |Get all jobs presented in the database|
+| GET         | api/users/username/:username |Get a user with appropriate username|
+| GET         | api/users/:id    |Get a user with appropriate _id|
+
+Every response contains the `X-Request-Arrival-Time` header with the time the request arrived to the REST service (added by the `requestTime` middleware).
 
 ## Quick Start
 
